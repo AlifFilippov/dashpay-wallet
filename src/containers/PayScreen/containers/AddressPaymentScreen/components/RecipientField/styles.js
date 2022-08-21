@@ -1,0 +1,57 @@
+// @flow
+
+export const fieldStyles = (theme: Object): Object => ({
+  // This is the outside of the input
+  container: {
+    alignItems: 'center',
+    backgroundColor: '#ffffff',
+    // backgroundColor: theme.fieldInputBackgroundColor,
+    borderColor: theme.fieldInputBorderColor,
+    borderRadius: 6,
+    borderWidth: 1,
+    flexDirection: 'row',
+    flexGrow: 1,
+    flexShrink: 0,
+    justifyContent: 'flex-start',
+    overflow: 'hidden',
+  },
+  body: {
+    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+  },
+  dash: {
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    position: 'relative',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+  },
+  right: {
+    alignItems: 'center',
+    bottom: 0,
+    justifyContent: 'center',
+    paddingLeft: 4,
+    paddingRight: 4,
+    position: 'absolute',
+    right: 0,
+    top: 0,
+  },
+  input: {
+    backgroundColor: '#ffffff',
+    borderColor: 'transparent',
+    borderRadius: 1,
+    borderWidth: 0,
+    color: theme.fieldInputColor,
+    flex: 1,
+    fontSize: 16,
+    fontWeight: '400',
+    height: 40,
+    lineHeight: 20,
+    paddingLeft: 6,
+    textAlign: 'center',
+  },
+});

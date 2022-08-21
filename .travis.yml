@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - "11"
+
+cache: npm
+
+env:
+  - NODE_ENV=test
+
+jobs:
+  include:
+    - stage: eslint
+      before_script:
+        - git remote set-branches --add origin master
+        - git fetch
+      script: git diff --diff-filter=ACMR --name-only origin/master '*.js' | xargs npx eslint
+    - stage: jest
+      script: npm test

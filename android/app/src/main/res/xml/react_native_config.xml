@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="false">localhost</domain>
+    <domain includeSubdomains="false">18.237.69.61</domain>
+    <domain includeSubdomains="false">18.236.234.255</domain>
+    <domain includeSubdomains="false">34.222.93.218</domain>
+    <domain includeSubdomains="false">54.202.56.14</domain>
+    <domain includeSubdomains="false">18.236.203.22</domain>
+    <domain includeSubdomains="false">52.25.254.66</domain>
+    <domain includeSubdomains="false">52.12.51.222</domain>
+    <domain includeSubdomains="false">54.189.199.102</domain>
+    <domain includeSubdomains="false">52.33.77.47</domain>
+    <domain includeSubdomains="false">34.211.58.233</domain>
+    <domain includeSubdomains="false">34.215.107.9</domain>
+    <domain includeSubdomains="false">54.218.17.62</domain>
+    <domain includeSubdomains="false">35.167.57.237</domain>
+  </domain-config>
+</network-security-config>
